@@ -1,0 +1,97 @@
+:root {
+	--brand-navy: #123458;
+	--brand-ocean: #1f6e8c;
+	--brand-sand: #f4efe6;
+	--brand-sun: #f2b134;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, sans-serif;
+	color: #1d2939;
+	background: linear-gradient(180deg, #ffffff 0%, #f8fbff 60%, #ffffff 100%);
+}
+
+.custom-navbar {
+	background: linear-gradient(90deg, var(--brand-navy), var(--brand-ocean));
+}
+
+.hero-section {
+	min-height: 75vh;
+	background-image: linear-gradient(rgba(18, 52, 88, 0.6), rgba(18, 52, 88, 0.55)),
+		url("https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=1800&q=80");
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-panel {
+	max-width: 760px;
+	background: rgba(10, 20, 40, 0.45);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+}
+
+.section-bg-soft {
+	background-color: var(--brand-sand);
+}
+
+.destination-card {
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destination-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 0.8rem 1.5rem rgba(18, 52, 88, 0.15);
+}
+
+.destination-card .card-img-top {
+	height: 220px;
+	object-fit: cover;
+}
+
+.contact-card {
+	border: 1px solid rgba(31, 110, 140, 0.14);
+}
+
+.btn-primary {
+	background-color: var(--brand-ocean);
+	border-color: var(--brand-ocean);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #17556b;
+	border-color: #17556b;
+}
+
+.btn-outline-primary {
+	color: var(--brand-ocean);
+	border-color: var(--brand-ocean);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+	background-color: var(--brand-ocean);
+	border-color: var(--brand-ocean);
+}
+
+.footer-dark {
+	background: #0f2845;
+}
+
+.footer-dark a {
+	transition: color 0.2s ease;
+}
+
+.footer-dark a:hover {
+	color: var(--brand-sun) !important;
+}
+
+@media (max-width: 767.98px) {
+	.hero-section {
+		min-height: 62vh;
+	}
+
+	.hero-panel h1 {
+		font-size: 2rem;
+	}
+}
